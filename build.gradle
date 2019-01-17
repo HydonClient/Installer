@@ -1,0 +1,26 @@
+plugins {
+    id "com.github.johnrengelman.shadow" version "2.0.4"
+    id 'java'
+}
+
+group 'me.kodingking'
+version '1.0'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile fileTree(dir: 'lib', include: '*.jar')
+
+    compile 'com.google.code.gson:gson:2.8.5'
+    compile group: 'commons-io', name: 'commons-io', version: '2.6'
+}
+
+jar {
+    manifest.attributes(
+            'Main-Class': 'me.kodingking.installer.InstallerMain'
+    )
+}
