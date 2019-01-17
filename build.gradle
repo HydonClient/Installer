@@ -21,6 +21,6 @@ dependencies {
 
 jar {
     manifest.attributes(
-            'Main-Class': 'me.kodingking.installer.InstallerMain'
+            'Main-Class': 'net.hydonclient.installer.InstallerMain'
     )
 }
