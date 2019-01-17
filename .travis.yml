@@ -1,6 +1,6 @@
 language: java
 install:
-  - 'gradle wrapper --gradle-version 2.7'
+  - 'gradle wrapper'
 script:
   - 'bash gradlew shadowJar'
 before_cache:
